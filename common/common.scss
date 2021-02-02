@@ -1,0 +1,13 @@
+//Added by Webdirket [Date: 01-04-2021]
+
+//CSS to look Creole Topics TOC links disable.
+.tag-creole .toc a {
+color: black !important;
+cursor: auto;
+}
+
+//CSS to display images properly for Creole Topics.
+//Whenever the image present in table and image size is greater the full content width, scroll bar is displayed. To remove scroll bar we have added below CSS
+.tag-creole .md-table img {
+width: 100%;
+}
