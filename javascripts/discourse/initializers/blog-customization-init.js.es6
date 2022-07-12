@@ -10,14 +10,15 @@ export default {
         /**
         ** Override Masonry Layout, To have 25px spacing between topic boxes on the Blog category page [Added by: Saurabh; Date: 12-07-2022]
         **/
-        api.onPageChange((url) => {
-            if (!CSS.supports("grid-template-rows", "masonry")) {
-                alert(url);
+        if (!CSS.supports("grid-template-rows", "masonry")) {
+            const path = window.location.pathname;
+            if(/^\/c\/knowledge-base\/blog\//.test(path)){
                 api.modifyClass("component:topic-list", {
                     masonryGridSpacingPixels: 25
-                });    
-            }
-        });
+                });
+            } 
+                
+        }
     });
   },
 };
