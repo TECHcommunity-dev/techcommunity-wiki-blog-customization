@@ -3,7 +3,7 @@ import EmberObject, { action } from "@ember/object";
 import { isEmpty } from "@ember/utils";
 
 export default {
-  name: "discourse-signup",
+  name: "blog-customization",
 
   initialize() {
     withPluginApi("0.8", (api) => {
