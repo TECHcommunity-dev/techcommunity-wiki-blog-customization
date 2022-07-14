@@ -12,12 +12,9 @@ export default {
         **/
         if (!CSS.supports("grid-template-rows", "masonry")) {
             const path = window.location.pathname;
-            if(/^\/c\/knowledge-base\/blog\//.test(path)){
-                api.modifyClass("component:topic-list", {
-                    masonryGridSpacingPixels: 25
-                });
-            } 
-                
+            api.modifyClass("component:topic-list", {
+                masonryGridSpacingPixels: 25
+            }); 
         }
     });
   },
