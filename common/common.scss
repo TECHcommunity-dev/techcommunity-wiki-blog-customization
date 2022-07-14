@@ -12,3 +12,15 @@ cursor: auto;
 .tag-creole .md-table img {
 width: 100%;
 }
+
+/* CSS for teh Blog category page */
+// 1. To have 25px spacing at the top of the topic-list on the Blog category page [Added by: Saurabh; Date: 12-07-2022]
+// 2. Resolve the issue for the topic preview tooltip on the Blog category page [Added by: Saurabh; Date: 12-07-2022]
+body.category.category-knowledge-base-blog {
+    .topic-list.topic-thumbnails-masonry {
+        margin-top: 25px !important;
+        tr.topic-list-item {
+            overflow: visible !important;
+        }
+    }
+}
