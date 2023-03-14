@@ -13,6 +13,7 @@ export default {
         if (!CSS.supports("grid-template-rows", "masonry")) {
             const path = window.location.pathname;
             api.modifyClass("component:topic-list", {
+                pluginId: 'techcommunity-topic-list',
                 masonryGridSpacingPixels: 25
             }); 
         }
