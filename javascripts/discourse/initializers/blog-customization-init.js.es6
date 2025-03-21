@@ -1,4 +1,3 @@
-/***
 import { withPluginApi } from "discourse/lib/plugin-api";
 import EmberObject, { action } from "@ember/object";
 import { isEmpty } from "@ember/utils";
@@ -19,4 +18,3 @@ export default {
     });
   },
 };
-***/
